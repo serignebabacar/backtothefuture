@@ -4,8 +4,8 @@ import org.entreprise.film.IFormatter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class FormatterImplTest {
-    IFormatter formatter = new FormatterImpl();
+class FormatterTest {
+    private final IFormatter formatter = new Formatter();
 
     @Test
     void testNombreDeFilmApresExtraction() {

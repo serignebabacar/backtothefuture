@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class CalculNombreDeFilmTest {
 
     private final ICalculNombreDeFilm calculNombreDeFilm = new CalculNombreDeFilm();
-    private final IFormatter formatter = new FormatterImpl();
+    private final IFormatter formatter = new Formatter();
     private final String input = """
             Back to the Future 1
                             

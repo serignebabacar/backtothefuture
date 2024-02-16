@@ -19,7 +19,7 @@ public class CalculNombreDeFilm implements ICalculNombreDeFilm {
     }
 
     @Override
-    public int nombreDeVoletsTotal(Map<String, Integer> films) {
+    public long nombreDeVoletsTotal(Map<String, Integer> films) {
         return films
                 .entrySet()
                 .stream()

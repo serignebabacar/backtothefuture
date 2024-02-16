@@ -20,11 +20,12 @@ public class CalculPrixTotal implements ICalculPrixTotal {
         this.formatter = formatter;
     }
 
+    @Override
     public double calculerPrixTotal(String input) {
         Map<String, Integer> panier = formatter.extraireFilm(input);
         long nombreDeVoletsDifferents = calculNombreDeFilm.nombreDeVoletsDifferents(panier);
         long nombreAutresFilms = calculNombreDeFilm.nombreAutresFilms(panier);
-        int nombreDeVoletsTotal = calculNombreDeFilm.nombreDeVoletsTotal(panier);
+        long nombreDeVoletsTotal = calculNombreDeFilm.nombreDeVoletsTotal(panier);
         double pourcentage = 1;
         if (nombreDeVoletsDifferents == 2) {
             pourcentage = REDUCTION_10_POURCENT;
